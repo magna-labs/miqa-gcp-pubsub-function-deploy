@@ -13,7 +13,7 @@ This Terraform setup:
 - Grants a service account Pub/Sub publish rights
 - Deploys a Cloud Function triggered by that topic
 
-## Prerequisites
+#### Prerequisites
 
 - GCP Project with billing enabled
 - Terraform installed (`brew install terraform`)
