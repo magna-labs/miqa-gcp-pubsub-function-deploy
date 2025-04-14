@@ -19,7 +19,7 @@ This Terraform setup:
 - Terraform installed (`brew install terraform`)
 - gsutil installed and authenticated
 
-Run the following in your terminal:
+Run the following in your terminal (first replace the project ID and email variables):
 ```bash
 YOUR_PROJECT_ID=your-project
 SA_EMAIL=your-sa@your-project.iam.gserviceaccount.com
