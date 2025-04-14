@@ -7,6 +7,18 @@ This guide walks through how to deploy and connect a Pub/Sub-triggered Cloud Fun
 ## ✅ Step-by-Step Instructions
 
 ### 1. Deploy the Cloud Function with Terraform
+
+This Terraform setup:
+- Creates a Pub/Sub topic
+- Grants a service account Pub/Sub publish rights
+- Deploys a Cloud Function triggered by that topic
+
+## Prerequisites
+
+- GCP Project with billing enabled
+- Terraform installed (`brew install terraform`)
+- gsutil installed and authenticated
+
 Run the following in your terminal:
 ```bash
 YOUR_PROJECT_ID=your-project
@@ -29,6 +41,7 @@ terraform apply \
   -var="function_bucket=miqa-resources" \
   -var="function_zip=runners/gcp-demo-function-source.zip"
 ```
+
 
 ---
 
