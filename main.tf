@@ -14,10 +14,10 @@ resource "google_pubsub_topic_iam_member" "pubsub_publisher" {
 }
 
 resource "google_cloudfunctions2_function" "miqa_function" {
-  name     = "miqa-function"
-  location = var.region
+  name        = var.function_name
+  location    = var.region
   description = "Triggered by Pub/Sub messages"
-  
+
   build_config {
     runtime     = "python311"
     entry_point = "hello_pubsub"
