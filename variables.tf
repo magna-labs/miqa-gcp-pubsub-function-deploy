@@ -8,8 +8,15 @@ variable "region" {
 }
 
 variable "topic_name" {
-  type    = string
-  default = "miqa-topic"
+  type        = string
+  description = "Name of the Pub/Sub topic to create."
+  default     = "miqa-topic"
+}
+
+variable "function_name" {
+  type        = string
+  description = "Name of the Cloud Function to create."
+  default     = "miqa-function"
 }
 
 variable "publisher_sa_email" {
